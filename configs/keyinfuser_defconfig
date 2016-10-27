@@ -1,9 +1,14 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2016.11-git-01035-g30e7278 Configuration
+# Buildroot 2016.11-git-01035-gaf5fb9e Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_HOST_GCC_AT_LEAST_4_6=y
+BR2_HOST_GCC_AT_LEAST_4_7=y
+BR2_HOST_GCC_AT_LEAST_4_8=y
+BR2_HOST_GCC_AT_LEAST_4_9=y
+BR2_HOST_GCC_AT_LEAST_5=y
+BR2_HOST_GCC_AT_LEAST_6=y
 
 #
 # Target options
@@ -726,10 +731,7 @@ BR2_PACKAGE_DIRECTFB_SVG=y
 # BR2_PACKAGE_DIRECTFB_DITHER_RGB16 is not set
 # BR2_PACKAGE_DIRECTFB_TESTS is not set
 # BR2_PACKAGE_DIRECTFB_EXAMPLES is not set
-
-#
-# efl needs udev /dev management and a toolchain w/ C++, dynamic library, gcc >= 4.7, threads, wchar
-#
+# BR2_PACKAGE_EFL is not set
 # BR2_PACKAGE_FBDUMP is not set
 # BR2_PACKAGE_FBGRAB is not set
 # BR2_PACKAGE_FBSET is not set
@@ -1313,10 +1315,7 @@ BR2_PACKAGE_LUAJIT_ARCH_SUPPORTS=y
 # BR2_PACKAGE_MOARVM is not set
 BR2_PACKAGE_MONO_ARCH_SUPPORTS=y
 # BR2_PACKAGE_MONO is not set
-
-#
-# nodejs needs a toolchain w/ C++, dynamic library, threads, gcc >= 4.8, wchar
-#
+# BR2_PACKAGE_NODEJS is not set
 # BR2_PACKAGE_PERL is not set
 # BR2_PACKAGE_PHP is not set
 # BR2_PACKAGE_PYTHON is not set
@@ -2005,6 +2004,7 @@ BR2_PACKAGE_XUTIL_UTIL_MACROS=y
 # BR2_PACKAGE_ARGUS is not set
 # BR2_PACKAGE_ARPTABLES is not set
 # BR2_PACKAGE_ATFTP is not set
+# BR2_PACKAGE_AUTOSSH is not set
 # BR2_PACKAGE_AVAHI is not set
 # BR2_PACKAGE_AXEL is not set
 # BR2_PACKAGE_BABELD is not set
@@ -2034,7 +2034,7 @@ BR2_PACKAGE_XUTIL_UTIL_MACROS=y
 # BR2_PACKAGE_CUPS is not set
 # BR2_PACKAGE_DANTE is not set
 # BR2_PACKAGE_DHCP is not set
-# BR2_PACKAGE_DHCPCD is not set
+BR2_PACKAGE_DHCPCD=y
 # BR2_PACKAGE_DHCPDUMP is not set
 # BR2_PACKAGE_DNSMASQ is not set
 # BR2_PACKAGE_DRBD_UTILS is not set
@@ -2138,7 +2138,7 @@ BR2_PACKAGE_NETCAT=y
 # BR2_PACKAGE_OPEN_PLC_UTILS is not set
 # BR2_PACKAGE_OPENNTPD is not set
 # BR2_PACKAGE_OPENOBEX is not set
-# BR2_PACKAGE_OPENSSH is not set
+BR2_PACKAGE_OPENSSH=y
 # BR2_PACKAGE_OPENSWAN is not set
 # BR2_PACKAGE_OPENVPN is not set
 # BR2_PACKAGE_P910ND is not set
