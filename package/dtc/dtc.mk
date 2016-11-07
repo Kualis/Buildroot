@@ -4,12 +4,13 @@
 #
 ################################################################################
 
-DTC_VERSION = 1.4.1
-DTC_SOURCE = dtc-$(DTC_VERSION).tar.xz
-DTC_SITE = https://www.kernel.org/pub/software/utils/dtc
+DTC_VERSION = 61bbb7e7719959dc70917ae855398d278afa99c7
+#DTC_SOURCE = dtc-$(DTC_VERSION).tar.xz
+#DTC_SITE = https://www.kernel.org/pub/software/utils/dtc
+DTC_SITE = $(call github,atenart,dtc,$(DTC_VERSION))
 DTC_LICENSE = GPLv2+ or BSD-2c (library)
 DTC_LICENSE_FILES = README.license GPL
-DTC_INSTALL_STAGING = YES
+#DTC_INSTALL_STAGING = YES
 DTC_DEPENDENCIES = host-bison host-flex
 HOST_DTC_DEPENDENCIES = host-bison host-flex
 
