@@ -1764,4 +1764,6 @@ menu "Text editors and viewers"
 	source "package/vim/Config.in"
 endmenu
 
+source "package/keyinfuser/Config.in"
+
 endmenu
