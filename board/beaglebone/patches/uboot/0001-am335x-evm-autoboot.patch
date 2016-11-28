@@ -1,0 +1,16 @@
+Autoboot
+---
+diff --git a/include/configs/am335x_evm.h b/include/configs/am335x_evm.h
+index 20f84a6..d058b6a 100644
+--- a/include/configs/am335x_evm.h
++++ b/include/configs/am335x_evm.h
+@@ -207,6 +207,9 @@
+ #define CONFIG_SYS_I2C_EEPROM_ADDR_LEN 2
+ #define CONFIG_SYS_I2C_MULTI_EEPROMS
+ 
++#define CONFIG_AUTOBOOT_KEYED           1
++#define CONFIG_AUTOBOOT_STOP_STR        "s"
++
+ /* PMIC support */
+ #define CONFIG_POWER_TPS65217
+ #define CONFIG_POWER_TPS65910
