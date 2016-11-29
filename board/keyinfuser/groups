@@ -1,0 +1,1 @@
+keyinfuser -1 root -1 =keyinfuser /home/keyinfuser /bin/bash systemd-journal
