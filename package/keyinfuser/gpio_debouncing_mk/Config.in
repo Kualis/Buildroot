@@ -1,0 +1,6 @@
+config BR2_PACKAGE_GPIO_DEBOUNCING_MK
+	bool "gpio_debouncing_mk"
+	depends on BR2_arm # only relevant for TI am335x
+	depends on BR2_BINFMT_ELF # assumes the compiler builds ELF file
+	help
+

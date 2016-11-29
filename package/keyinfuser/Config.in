@@ -1,0 +1,4 @@
+menu "Keyinfuser packages"
+	source "package/keyinfuser/pwm_mk/Config.in"
+	source "package/keyinfuser/gpio_debouncing_mk/Config.in
+endmenu

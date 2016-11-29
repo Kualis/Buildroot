@@ -1,0 +1,5 @@
+config BR2_PACKAGE_PWM_MK
+	bool "pwm_mk"
+	depends on BR2_arm # only relevant for TI am335x
+	depends on BR2_BINFMT_ELF # assumes the compiler builds ELF file
+	help
