@@ -21,3 +21,10 @@ chmod 1777 ${TARGET_DIR}/var/tmp
 # Add networkd service for starting eth0 at boot
 
 append_if_not_present "[Match]\nname=eth0\n\n[Network]\nDHCP=yes\n"     "${TARGET_DIR}/etc/systemd/network/eth0.network"
+
+# Add the PCA kernel module in modules-load.d directory
+append_if_not_present "pwm_pca9685.conf\n"     "${TARGET_DIR}/etc/modules-load.d/pwm-pca9685.conf"
+
+# Add the scripts which allow us to put the rootfs on the board
+cp board/keyinfuser/install_rootfs_overlay.sh ${TARGET_DIR}/root/
+cp board/keyinfuser/stop_services.sh ${TARGET_DIR}/root/
