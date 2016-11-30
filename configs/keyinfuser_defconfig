@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2016.11-git-gc874604 Configuration
+# Buildroot 2016.11-git-g0b60b19-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_HOST_GCC_AT_LEAST_4_6=y
@@ -389,11 +389,13 @@ BR2_LINUX_KERNEL_GZIP=y
 # BR2_LINUX_KERNEL_LZMA is not set
 # BR2_LINUX_KERNEL_LZO is not set
 # BR2_LINUX_KERNEL_XZ is not set
+
 BR2_LINUX_KERNEL_DTS_SUPPORT=y
+BR2_LINUX_KERNEL_USE_INTREE_DTS=y
+# BR2_LINUX_KERNEL_USE_CUSTOM_DTS is not set
+BR2_LINUX_KERNEL_INTREE_DTS_NAME="am335x-boneblack-hdmi-overlay"
+
 # BR2_LINUX_KERNEL_USE_INTREE_DTS is not set
-BR2_LINUX_KERNEL_USE_CUSTOM_DTS=y
-BR2_LINUX_KERNEL_CUSTOM_DTS_PATH="/home/keyinfuser/buildroot-keyinfuser/output/images/am335x-boneblack-hdmi-overlay.dts"
-# BR2_LINUX_KERNEL_INSTALL_TARGET is not set
 
 #
 # Linux Kernel Extensions
@@ -2727,7 +2729,8 @@ BR2_PACKAGE_OPENSSH=y
 #
 # -------------------------------------------------------
 #
-# BR2_PACKAGE_OPKG is not set
+BR2_PACKAGE_OPKG=y
+# BR2_PACKAGE_OPKG_GPG_SIGN is not set
 # BR2_PACKAGE_RPM is not set
 
 #
